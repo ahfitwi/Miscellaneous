@@ -51,7 +51,7 @@ def fetch_data(arg):
 # ....
 
 #------------------------------------------------------------------------------
-# Main(): don't use if '__main__' == '__name__' for it mutes the KB.
+# Main(): don't use if __name__ == '__main__' for it mutes the KB.
 #------------------------------------------------------------------------------
 # args are optional; watchout! args = ('alem) ~ 4 arguments
 def main():
