@@ -1,0 +1,45 @@
+#******************************************************************************
+# Steps to create python-3 venv in Windows OS and Ubuntu based Machine
+#******************************************************************************
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Jun 24 20:23:11 2020
+
+@author: alem fitwi
+"""
+#******************************************************************************
+# A. On Ubuntu OS based Machine
+#******************************************************************************
+1 $ python -V # check py version on your machine
+2 $ sudo apt install python3-venv # install p3venv
+3 $ python3 -m venv myvenv # create venv, named myvenv
+4 $ source myenv/bin/activate # activate the created venv
+5 $ deactivate # deactivate the venv
+
+#******************************************************************************
+# B. On Windows OS based Machine
+#******************************************************************************
+1. Install venv 
+   > pip install virtualenv
+   
+2. Create venv
+   > virtualenv [location of your venv] -p location of correct py version
+   > virtualenv C:\Users\alem\py39venv -p C:\Python39\python.exe
+   
+3. Activate venv
+   > .\[venv folder name]\Scripts\activate
+   > .\py39venv\Scripts\activate
+   (py39venv)C:\...\py39venv>
+   
+4. Run programs in the venv
+   (py39venv)C:\...\py39venv> python sample.py
+   
+5. Deactivate the venv
+   (py39venv)C:\...\py39venv> deactivate
+   C:\...\py39venv>
+
+#******************************************************************************
+#                             ~End~
+#******************************************************************************
+

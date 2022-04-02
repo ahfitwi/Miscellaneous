@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<!---****************************************************************************-->
+<!--- Interface for using Hot-keys using document.addEventListener--->
+<!---****************************************************************************-->
+<!---Created on Fri Aug 14 13:04:45 2021 @author: alem fitwi --->
+<!---****************************************************************************-->
+
+<body>
+    <h3>NodeJS Hotkeys using Document.addEventHandler for CE Dashboard</h3>
+    <p> Implement at least 5 hotkeys, 5 combination of key presses!</p>
+    <!-- JavaScript Tag-->
+    <script>
+        function upload() {
+            // Add uploading actions
+            // Add PythonShell along its bundled dependencies to execute actions
+            return "ctrl + shift + u combination of keys were pressed";
+        }
+
+        function save() {
+            // Add saving actions
+            // Add PythonShell along its bundled dependencies to execute actions
+            return "ctrl + shift + s combination of keys were pressed";
+        }
+
+        function reset() {
+            // Add resetting actions
+            // Add PythonShell along its bundled dependencies to execute actions
+            return "ctrl + shift + r combination of keys were pressed";
+        }
+
+        function download() {
+            // Add downloading actions
+            // Add PythonShell along its bundled dependencies to execute actions
+            return "ctrl + shift + d combination of keys were pressed";
+        }
+
+        function fetch_data() {
+            // Add data-fetching actions
+            // Add PythonShell along its bundled dependencies to execute actions
+            return "ctrl + shift + f combination of keys were pressed";
+        }
+
+        // Add Listner to hotkey presses
+        // KB is pressed down; hence, the first arg is "keydown"
+        document.addEventListener("keydown", key => {
+            //Prevent the default behavior of browsers vis-a-vis hotkeys
+            key.preventDefault();
+
+            //-----------------------------------------------------------------
+            if (key.ctrlKey && key.shiftKey && key.key.toLowerCase() == 'u') {
+                console.log(key) //to see pressed key on browser console
+                alert(upload)
+            }
+
+            //-----------------------------------------------------------------
+            if (key.ctrlKey && key.shiftKey && key.key.toLowerCase() == 's') {
+                console.log(key) //to see pressed key on browser console
+                alert(save)
+            }
+
+            //-----------------------------------------------------------------
+            if (key.ctrlKey && key.shiftKey && key.key.toLowerCase() == 'r') {
+                console.log(key) //to see pressed key on browser console
+                alert(reset)
+            }
+
+            //-----------------------------------------------------------------
+            if (key.ctrlKey && key.shiftKey && key.key.toLowerCase() == 'd') {
+                console.log(key) //to see pressed key on browser console
+                alert(download)
+            }
+
+            //-----------------------------------------------------------------
+            if (key.ctrlKey && key.shiftKey && key.key.toLowerCase() == 'f') {
+                console.log(key) //to see pressed key on browser console
+                alert(fetch_data)
+            }
+        })
+    </script>
+
+</body>
+
+</html>
