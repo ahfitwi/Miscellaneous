@@ -1,0 +1,84 @@
+#----------------------------------------------------------
+# Python Modules: from module1 import (m1, m2, m3, ...)
+#----------------------------------------------------------
+Installing packages is as easy as:
+	$ pip install the_package_name
+    $ pip list
+    $ pip freeze
+	$ pip install -r requirements.txt
+	$ virtualenv .\myvenv -p C:\Python38\python.exe
+	$ virtualenv C:Documents\alem\myvenv -p C:\Python38\python.exe
+	$ .\myvenv\Scripts\activate
+	$ C:Documents\alem\myvenv\Scripts\activate
+	$ deactivate
+#----------------------------------------------------------
+
+(1) Built-in Modules in py: 
+	- Rich Standard Library
+		- Lots of buitin Modules
+		- Provides lots of reusable codes
+(2) User-defined Modules
+	- Modules defined by user or you
+	
+(3) Third-pary Modules
+	- Not automatically installed with Python: pip install third-party-module
+	- Any module not written by you (first-party) nor 
+	   included in the standard library (second party) 
+	- Any Module that has been written by a thridy party
+	  (neither you or the  Python Software Foundation (PSF)).
+	- Used to add functionality to your code w/o having 
+	  to write it yourself.
+	- Example: requests, nose, numpy, pandas
+	- Python also has a huge collection of third-party 
+	  modules available for you to install.
+	https://pyhurry.readthedocs.io/en/latest/thirdparty.html
+			- pip, PyPI, Virtualenv
+	- The Python Package Index(PPI = pie-pee-eye) contains 
+	  numerous 3rd party modules that make python capable of 
+	  interacting with most of other languages & platforms.
+			- https://pypi.org/project/pandas/
+	- Popular third-party libraries: PyPI has thousands of 
+	  packages, it would be impossible to summarize them all. 
+	  But there are a handful of go-to packages that many 
+	  people use for common tasks:
+		requests
+		scrapy
+		Twisted
+		Pillow
+		lxml
+		PyYAML
+		Django, Flask, Pyramid
+		SQLAlchemy
+		numpy, scipy, pandas
+		pytest, tox, coverage, mock
+		six
+		Jinija2
+		cryptography
+		pylint, flake8, pep8
+		pymongo, redis, MySQL-Python, psycopg2
+		
+#----------------------------------------------------------
+# whl of python modules
+#----------------------------------------------------------
+https://www.lfd.uci.edu/~gohlke/pythonlibs/
+
+A Python .whl file is essentially a ZIP (.zip) archive with 
+a specially crafted filename that tells installers what 
+Python versions and platforms the wheel will support.
+
+A wheel is a type of built distribution. In this case, built 
+means that the wheel comes in a ready-to-install format and 
+allows you to skip the build stage required with source 
+distributions.
+
+Note: It’s worth mentioning that despite the use of the term 
+built, a wheel doesn’t contain .pyc files, or compiled 
+Python bytecode.
+
+A wheel filename is broken down into parts separated by 
+hyphens:
+
+{dist}-{version}(-{build})?-{python}-{abi}-{platform}.whl
+#----------------------------------------------------------
+#                     ~END~
+#----------------------------------------------------------
