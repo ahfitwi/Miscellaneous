@@ -62,7 +62,7 @@ de = DecoratorExample()
 de.example_function()
 
 """
-PS C:\Users\fitwialem2022\Documents\GitHub\HelpfulMaterials> python pymethods.py
+PS C:\Users\fitwialem\Documents\GitHub> python pymethods.py
 I'm an instance method!
 My name is Brook       
 None
@@ -71,5 +71,5 @@ None
 True
 Dunder: Hello, World!
 I'm a decorated function!
-PS C:\Users\fitwialem2022\Documents\GitHub\HelpfulMaterials>
+PS C:\Users\fitwialem\Documents\GitHub>
 """
