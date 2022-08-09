@@ -92,7 +92,8 @@
     - git push -u origin main/master 
     - git push origin head
 	- git push origin main # preferably this one
-	
+7. Pull changes
+    - git pull origin main
 #------------------------------------------------------------------------------------
 ### 								~End~
 #------------------------------------------------------------------------------------
