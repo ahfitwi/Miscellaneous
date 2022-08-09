@@ -94,6 +94,7 @@
 	- git push origin main # preferably this one
 7. Pull changes
     - git pull origin main
+    - git clone url # esp during the first time
 #------------------------------------------------------------------------------------
 ### 								~End~
 #------------------------------------------------------------------------------------
