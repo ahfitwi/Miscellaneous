@@ -1,3 +1,6 @@
+                                                                                                                
+														By Alem Fitwi (PhD)
+
 ### Steps to create GITHUB SSH Keys
 #------------------------------------------------------------------------------------
 1. Open Git Bash.
