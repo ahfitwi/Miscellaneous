@@ -1,0 +1,95 @@
+### Steps to create GITHUB SSH Keys
+#------------------------------------------------------------------------------------
+1. Open Git Bash.
+2. Enter the following on Git Bash.
+		$ ssh-keygen -t ed25519 -C "example@gmail.com"
+	
+    If you are using a legacy system that doesn't support the Ed25519 algorithm, use:
+		$ ssh-keygen -t rsa -b 4096 -C "example@gmail.com"
+        
+    This should create a new SSH key, using the provided email as a label.
+    
+           > Generating public/private algorithm key pair.
+             Generating public/private ed25519 key pair.
+        
+3. When prompted,  enter a file in which to save the key, and then press Enter. 
+   This accepts the default file location.
+    - Enter file in which to save the key:
+    - Enter passphrase (empty for no passphrase):**************
+    - Enter same passphrase again:**************
+    - Your identification has been saved in *********************.
+    - Your public key has been saved in ***********************.
+    - The key fingerprint is:
+        - **************************************
+    - The key's randomart image is:
+        
+            ***********************************
+
+ 4. At the prompt, type a secure passphrase:
+    - > Enter passphrase (empty for no passphrase): [Type a passphrase]
+    - > Enter same passphrase again: [Type passphrase again] 
+    
+5. Ensure the ssh-agent is running:
+        $ eval "$(ssh-agent -s)"
+        Agent pid xxxx
+    
+6. Add your SSH private key to the ssh-agent. 
+        $ ssh-add ~/.ssh/id_ed25519
+        Enter passphrase for **********:
+        Identity added: **************************************)
+        
+7. Add the SSH key to your account on GitHub. 
+        $ cat ~/.ssh/id_ed25519.pub | clip
+        
+8. Paste your key into the "Key" field.
+       *************************************
+       
+9. Click Add SSH key.
+        click on "Add SSH Key" button
+		
+#------------------------------------------------------------------------------------
+### Creating A Branch
+#------------------------------------------------------------------------------------
+- Here are the commands often used to create a branch on Github
+    - First Navigate to Main
+    - Create New Branch: 
+        - git branch -C IQTDA_Chroma
+    - List Branches
+        - git branch
+    - Switch to Branch
+        - git checkout IQTDA_Chroma
+        - git add file_name ... or git add. (or git add foldername/)
+    - Status
+        - git status
+    - Commit Changes
+        - git commit -m "Add Message Here"
+    - Push Changes to github
+        - git push origin head
+    - Switch to main
+        - git checkout main
+#------------------------------------------------------------------------------------
+### Other Git Commands
+#------------------------------------------------------------------------------------
+0. Git version
+    - git --version
+1. CD tot he github on local disk
+    - git init #if the first time
+2. Hook the remote url tot he local file/repo
+    - git remote add origin https/SSH
+    - git remote set-url origin https/SSH, this worked for me
+3. Check Status
+    - git status
+4. Adding/ staging Files
+    - git add folder/  #adds all contents of the folder
+	- git add file.py # adds a single file to staging area
+	- git add. #period to add all files
+5. Once files are staged, commit
+    - git commit -m "Add Text Message here"
+6. Push 
+    - git push -u origin main/master 
+    - git push origin head
+	- git push origin main # preferably this one
+	
+#------------------------------------------------------------------------------------
+### 								~End~
+#------------------------------------------------------------------------------------
