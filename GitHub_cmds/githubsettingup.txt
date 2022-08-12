@@ -74,27 +74,41 @@
 ### Other Git Commands
 #------------------------------------------------------------------------------------
 0. Git version
-    - git --version
-1. CD tot he github on local disk
-    - git init #if the first time
-2. Hook the remote url tot he local file/repo
-    - git remote add origin https/SSH
-    - git remote set-url origin https/SSH, this worked for me
+	- git --version
+1. CD/Navigate to the github on local disk
+	- git init #if the first time
+2. Hook the remote url to the local file/repo
+ 	- git remote add origin https/SSH
+    	- git remote set-url origin https/SSH, this worked for me
 3. Check Status
-    - git status
+    	- git status
 4. Adding/ staging Files
-    - git add folder/  #adds all contents of the folder
+    	- git add folder/  #adds all contents of the folder
 	- git add file.py # adds a single file to staging area
 	- git add. #period to add all files
 5. Once files are staged, commit
-    - git commit -m "Add Text Message here"
+    	- git commit -m "Add Text Message here"
 6. Push 
-    - git push -u origin main/master 
-    - git push origin head
+    	- git push -u origin main/master 
+    	- git push origin head
 	- git push origin main # preferably this one
 7. Pull changes
-    - git pull origin main
-    - git clone url # esp during the first time
+    	- git pull origin main
+    	- git clone url # esp during the first time
+8. Rename Branches
+    	- git branch -m <old name> <new name>
+9. Delete Branch
+    	- git branch -D <branch name>
+10. Save sth locally to take care of it later
+    	- git stash
+11. Pushing the branch to Git, just to push a new branch to github
+    	- git push origin <branch-name>
+12. Switching to a branch, allows you to switch to a branch:
+    	- git checkout <branch-name>
+13. Making a new branch, creates a new branch in the code repository:
+	- git branch <branch-name>
+14. Listing current branches, to view current branches in the code repository:
+	- git branch <branch-name>
 #------------------------------------------------------------------------------------
 ### 								~End~
 #------------------------------------------------------------------------------------
