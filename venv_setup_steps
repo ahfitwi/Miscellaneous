@@ -38,6 +38,26 @@ Created on Wed Jun 24 20:23:11 2020
 5. Deactivate the venv
    (py39venv)C:\...\py39venv> deactivate
    C:\...\py39venv>
+   
+#******************************************************************************
+# C. On Anaconda
+#******************************************************************************
+Isolated environment where you can install separate IDE versions and packages
+1. check conda version
+   > conda -V
+2. Update Conda version
+   > conda update conda
+3. Create venv
+   > conda -n create flaskvenv python = 3.7 anaconda
+4. Activate the venv
+   > conda activate flaskvenv
+5. Install packages to the venv
+   > conda install -n flaskvenv package
+6. Deactivate the venv
+   > deactivate flaskvenv
+7. Delete the venv
+   > conda remove -n flaskvenv -all
+Footer
 
 #******************************************************************************
 #                             ~End~
