@@ -52,6 +52,22 @@ df.loc[(df['Courses']=="Spark")&(df['Fee']==23000)|(df['Fee']==25000), 'Discount
 # Using DataFrame.apply() method with lambda function.
 df['Discount'] = df['Courses'].apply(lambda x: '1000' if x=='Spark' else 1000)
 
+# Filter tuples
+my_list = [(100, 1),  (100, 2), (100, 3)]
+
+# ✅ get min tuple in list of tuples
+min_tuple = min(my_list, key=lambda tup: tup[1])
+
+print(min_tuple)  # 👉️ (100, 1)
+
+# ------------------------------------------------------
+
+# ✅ get max tuple in list of tuples
+
+max_tuple = max(my_list, key=lambda tup: tup[1])
+
+print(max_tuple)  # 👉️ (100, 3)
+
 # Pandas create conditional column using mask() method.
 # Replace values where the condition is True
 df['Discount'] = df['Discount'].mask(df['Courses']=='Spark', other=1000)
