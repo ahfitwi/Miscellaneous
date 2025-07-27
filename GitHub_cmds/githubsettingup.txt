@@ -57,11 +57,11 @@
 - Here are the commands often used to create a branch on Github
     - First Navigate to Main
     - Create New Branch: 
-        - git branch -C IQTDA_Chroma
+        - git branch -C IQTDA_CXXX
     - List Branches
         - git branch
     - Switch to Branch
-        - git checkout IQTDA_Chroma
+        - git checkout IQTDA_CXXX
         - git add file_name ... or git add. (or git add foldername/)
     - Status
         - git status
